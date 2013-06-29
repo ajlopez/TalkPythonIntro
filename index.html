@@ -45,6 +45,9 @@
                         <a href="https://github.com/ajlopez/TalkPythonIntro">https://github.com/ajlopez/TalkPythonIntro</a>
                     </p>
                     <p>
+                        <a href="https://github.com/ajlopez/AprendiendoPython">https://github.com/ajlopez/AprendiendoPython</a>
+                    </p>
+                    <p>
                         <small>Using <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></small>
                     </p>
                 </section>
@@ -194,11 +197,35 @@ ValueError: math domain error
 'Hello, world'
 >>> 'Hello, world'
 'Hello, world'
->>> # concatenate two strings
+```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Concatenating Strings
+```python
 >>> 'Hello, ' 'world'
 'Hello, world'
 >>> "\"Hello, world!\" she said"
 '"Hello, world!" she said'
+>>> "Hello, " + "world!"
+'Hello, world!'
+>>> x = "Hello, "
+>>> y = "world!"
+>>> x + y
+'Hello, world!'
+```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Long Strings
+```python
+print '''This is a very long string.
+It continues here.
+And it's not over yet.
+"Hello, world!"
+Still here.'''
 ```
                         </script>
                     </section>
@@ -214,11 +241,52 @@ a = 1
                 </section>
                 <section>
                     <section data-markdown>
+## Running Python
+
+hello.py
+```python
+print('Hello, world')
+```
+
+Running hello.py
+```python
+python hello.py
+```
+
+                    </section>
+                    <section data-markdown>
+## Unix/Linux
+
+Add `shebang` at the beginning of the file
+```
+#!/usr/bin/python
+```
+
+If you don't know where is `python`
+```
+#!/usr/bin/env python
+```
+
+Make `hello.py` executable
+```
+chmod a+x hello.py
+```
+
+
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
                         <script type="text/template">
                         ## List and Tuples
-    ```python
-    a = 1
-    ```
+```python
+>>> a = [1, 2, 3]
+>>> a
+[1, 2, 3]
+>>> b = (1, 2, 3,)
+>>> b
+(1, 2, 3)
+```
                         </script>
                     </section>
                     <section data-markdown>
@@ -244,7 +312,7 @@ a = 1
                     <section>
                         <h2>Installing pip</h2>
                         <p>See <a href='http://www.pip-installer.org/en/latest/installing.html'>installing pip</a></p>
-                        <p>In my Windows machine:</p>
+                        <p>In my Windows 8 machine:</p>
                         <ul>
                             <li>Install <a href='https://pypi.python.org/pypi/distribute/'>https://pypi.python.org/pypi/distribute/</a></li>
                             <li>Download distribute_setup.py from <a href='http://python-distribute.org/'>http://python-distribute.org/</a></li>
@@ -255,6 +323,14 @@ a = 1
                             <li>Add <code>&lt;your python&gt;\Scripts</code> to your path</li>
                         </ul>
                     </section>
+                </section>
+                
+                <section>
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a href='http://www.apress.com/9781590599822'>Beginning Python, from Novice to Professional</a></li>
+                        <li>See resources at <a href='https://github.com/ajlopez/AprendiendoPython'>Aprendiendo Python</a></li>
+                    </ul>
                 </section>
 
                 <section>
