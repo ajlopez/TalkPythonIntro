@@ -99,11 +99,44 @@ Type "help", "copyright", "credits" or "license" for more information.
                     </section>
                     <section data-markdown>
                         <script type="text/template">
-                        ## Import math
+                        ## Built-in functions
+```python
+>>> pow(2, 3)
+8
+>>> abs(-10)
+10
+>>> pow
+<built-in functin pow>
+>>> abs
+<built-in functin abs>
+```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Conversion
+```python
+>>> int(3/2)
+1
+>>> float(5)
+5.0
+>>> int
+<class 'int'>
+>>> float
+<class 'float'>
+```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Module math
+Import math                        
 ```python
 >>> import math
 >>> math.sqrt(2)
 1.4142135623730951
+>>> math.floor(32.9)
+32
 >>> math
 <module 'math' (built-in)>
 >>> dir(math)
@@ -113,6 +146,12 @@ Type "help", "copyright", "credits" or "license" for more information.
  'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isfinite', 'isinf', 'isnan', 
  'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'modf', 'pi', 'pow', 
  'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+```
+Partial import
+```python
+>>> from math import sqrt
+>>> sqrt(9)
+3.0
 ```
                         </script>
                     </section>
