@@ -74,6 +74,42 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
                     </script>
                 </section>
+                <section>
+                    <section data-markdown>
+## Running Python
+
+hello.py
+```python
+print('Hello, world')
+```
+
+Running hello.py
+```python
+python hello.py
+```
+
+                    </section>
+                    <section data-markdown>
+## Unix/Linux
+
+Add `shebang` at the beginning of the file
+```
+#!/usr/bin/python
+```
+
+If you don't know where is `python`
+```
+#!/usr/bin/env python
+```
+
+Make `hello.py` executable
+```
+chmod a+x hello.py
+```
+
+
+                    </section>
+                </section>
                 <section>                
                     <section data-markdown>
                         <script type="text/template">
@@ -241,38 +277,19 @@ a = 1
                 </section>
                 <section>
                     <section data-markdown>
-## Running Python
-
-hello.py
-```python
-print('Hello, world')
-```
-
-Running hello.py
-```python
-python hello.py
-```
-
+                        <script type="text/template">
+                        ## Statements
+                        </script>
                     </section>
                     <section data-markdown>
-## Unix/Linux
-
-Add `shebang` at the beginning of the file
-```
-#!/usr/bin/python
-```
-
-If you don't know where is `python`
-```
-#!/usr/bin/env python
-```
-
-Make `hello.py` executable
-```
-chmod a+x hello.py
-```
-
-
+                        <script type="text/template">
+                        ## Conditionals
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Loops
+                        </script>
                     </section>
                 </section>
                 <section>
@@ -321,6 +338,29 @@ knights.index('herring')
 ValueError: list.index(x): x not in list
 ```
 More: dir(knights)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Dictionaries
+
+Create a dictionary
+```python
+d = {'x': 1, 'y': 2, 'z': 3}
+e = dict(x=1, y=2, z=3)
+```
+
+Iterate
+```python
+for key in d:
+  print key, 'corresponds to', d[key]
+```
+
+Iterate keys, values
+```python
+for key, value in d.items():
+  print key, 'corresponds to', value
+```
                         </script>
                     </section>
                 </section>
