@@ -291,10 +291,36 @@ chmod a+x hello.py
                     </section>
                     <section data-markdown>
                         <script type="text/template">
-                        ## Creating a List
+                        ## Accesing Values
 ```python
-a = 1
+>>> a = [1,2,3]
+>>> a[1]
+2
+>>> a[1:2]
+[2]
+>>> a[-1]
+3
+>>> a[-1:]
+[3]
+>>> a[:-1]
+[1, 2]
 ```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Example Method: Index
+```python
+>>> knights = ['We', 'are', 'the', 'knights', 'who', 'say', 'ni']
+>>> knights.index('who')
+4
+>>> knights.index('herring')
+Traceback (innermost last):
+File "<pyshell#76>", line 1, in ?
+knights.index('herring')
+ValueError: list.index(x): x not in list
+```
+More: dir(knights)
                         </script>
                     </section>
                 </section>
@@ -302,12 +328,30 @@ a = 1
                 <section>
                     <section data-markdown>
                     ## Classes and Objects
+                    All in Python is an object
+                    </section>
+                    <section data-markdown>
+                    ## First Class and Object
+```python
+>>> class Foo:
+...    def say(self, msg):
+...       print(msg)
+...
+>>> f = Foo()
+>>> f.say('hello')
+hello
+```
                     </section>
                 </section>
 
                 <section>
                     <section data-markdown>
                     ## Modules
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                    ## Metaprogramming
                     </section>
                 </section>
 
