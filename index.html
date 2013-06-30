@@ -278,17 +278,36 @@ a = 1
                 <section>
                     <section data-markdown>
                         <script type="text/template">
-                        ## Statements
+                        ## Simple Statements
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
                         ## Conditionals
+None and False are false.
+                        
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
                         ## Loops
+for                        
+```python
+words = ['this', 'is', 'an', 'ex', 'parrot']
+for word in words:
+  print word
+```
+
+while
+```python
+while True:
+  word = input('Please enter a word: ')
+  if not word: break
+  # do something with the word:
+  print 'The word was ' + word
+```
+
+They have `break` and `continue`
                         </script>
                     </section>
                 </section>
