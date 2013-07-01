@@ -445,6 +445,13 @@ def multiplier(factor):
     return number*factor
   return multiplyByFactor
 ```
+Parameters
+```python
+def print_params(x, y, z=3, *pospar, **keypar):
+  print x, y, z
+  print pospar
+  print keypar
+```
                         </script>
                     </section>
                 </section>
@@ -487,6 +494,14 @@ class Dog:
                     <section data-markdown>
                     ## Inheritance
 ```python
+class Animal:
+  def __init__(self):
+    print("Animal created")
+
+class Dog(Animal):
+  def __init__(self, name):
+    super(Animal, self).__init__()
+    self.__name = name
 ```
                     </section>
                 </section>
