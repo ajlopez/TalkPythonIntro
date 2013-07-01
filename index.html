@@ -114,6 +114,11 @@ chmod a+x hello.py
                     <section data-markdown>
                         <script type="text/template">
                         ## Numbers
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Integers and Reals
 ```python
 >>> 2 + 2
 4
@@ -228,6 +233,11 @@ ValueError: math domain error
                     <section data-markdown>
                         <script type="text/template">
                         ## Strings
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## String constants
 ```python
 >>> "Hello, world"
 'Hello, world'
@@ -266,14 +276,41 @@ Still here.'''
                         </script>
                     </section>
                 </section>
-                
-                <section data-markdown>
-                    <script type="text/template">
-                    ## Variables
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Variables
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Scope
+```python
+>>> def foo(): x = 42
+...
+>>> x = 1
+>>> foo()
+>>> x
+1
 ```
-a = 1
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## All is a Dictionary
+
+```python
+>>> x = 1
+>>> scope = vars()
+>>> scope['x']
+1
+>>> scope['x'] += 1
+>>> x
+2
 ```
-                    </script>
+                        </script>
+                    </section>
                 </section>
                 
                 <section>
