@@ -54,9 +54,14 @@
 
                 <section>
                     <h2>Python</h2>
-                    <p>
-                        A dynamic language
-                    </p>
+                    <ul>
+                        <li>Dynamic language</li>
+                        <li>General purpose</li>
+                        <li>Object-oriented, imperative, functional programming</li>
+                        <li>Multiplatform</li>
+                        <li>CPython, open source</li>
+                        <li>Created by Guido van Rossum (late 1980s)</li>
+                    </ul>
 
                     <aside class="notes">
                         Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
@@ -510,13 +515,79 @@ class Dog(Animal):
                     <section data-markdown>
                     ## Modules
                     </section>
+                    <section data-markdown>
+## Modules are Programs
+hello.py
+```python
+def say(name):
+    print("Hello,", name)
+```
+In other program or interpreter
+```python
+import hello
+hello.say('Adam')
+```
+```python
+from hello import say
+say('Adam')
+```                    
+                    </section>
+                    <section data-markdown>
+## Running Modules
+hello.py
+```python
+def say(name):
+    print("Hello,", name)
+
+def test():
+    say('World')
+
+if __name__ == '__main__':
+    test()
+```
+                    </section>
+                    <section data-markdown>
+## Searching Modules
+```python
+import sys
+import pprint
+
+pprint.pprint(sys.path)
+```
+In my machine
+```
+['',
+ 'd:\\Python332\\lib\\site-packages\\distribute-0.6.45-py3.3.egg',
+ 'C:\\Windows\\SYSTEM32\\python33.zip',
+ 'd:\\Python332\\DLLs',
+ 'd:\\Python332\\lib',
+ 'd:\\Python332',
+ 'd:\\Python332\\lib\\site-packages',
+ 'd:\\Python332\\lib\\site-packages\\win32',
+ 'd:\\Python332\\lib\\site-packages\\win32\\lib',
+ 'd:\\Python332\\lib\\site-packages\\Pythonwin',
+ 'd:\\Python332\\lib\\site-packages\\setuptools-0.6c11-py3.3.egg-info']
+```
+                    </section>
+                    <section data-markdown>
+## Packages
+They are directories
+```python
+>>> import sqlite3
+>>> sqlite3.__file__
+'d:\\Python332\\lib\\sqlite3\\__init__.py'
+>>> import distutils
+>>> distutils.__file__
+'d:\\Python332\\lib\\distutils\\__init__.py'
+```
+                    </section>
                 </section>
                 <section>
                     <section data-markdown>
                     ## Metaprogramming
-                    
-Creating a class
-                    
+                    </section>
+                    <section data-markdown>
+## Creating a Class
                     </section>
                     <section data-markdown>
                     ## Globals, Locals, Exec
@@ -535,9 +606,7 @@ exec('one = 1')
 See
 ```python
 print(exec.__doc__)
-```
-
-                    
+```                    
                     </section>
                 </section>
 
