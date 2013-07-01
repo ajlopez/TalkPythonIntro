@@ -316,7 +316,12 @@ Still here.'''
                 <section>
                     <section data-markdown>
                         <script type="text/template">
-                        ## List and Tuples
+                        ## List, Tuples, Dictionaries
+                        </script>
+                    </script?
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Creating List and Tuples
 ```python
 >>> a = [1, 2, 3]
 >>> a
@@ -406,7 +411,6 @@ else:
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template">
                         ## Loops
 for                        
 ```python
@@ -425,6 +429,22 @@ while True:
 ```
 
 They have `break` and `continue`
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Functions
+Simple
+```python
+def foo():
+  print("Hello, world")
+```
+Nested
+```python
+def multiplier(factor):
+  def multiplyByFactor(number):
+    return number*factor
+  return multiplyByFactor
+```
                         </script>
                     </section>
                 </section>
@@ -432,18 +452,41 @@ They have `break` and `continue`
                 <section>
                     <section data-markdown>
                     ## Classes and Objects
-                    All in Python is an object
                     </section>
                     <section data-markdown>
-                    ## First Class and Object
+                    ## First Example
 ```python
->>> class Foo:
-...    def say(self, msg):
-...       print(msg)
-...
->>> f = Foo()
->>> f.say('hello')
-hello
+class Foo:
+   def say(self, msg):
+      print(msg)
+      
+f = Foo()
+f.say('hello')
+```
+Empty Class
+```python
+class Empty:
+  pass
+```
+                    </section>
+
+                    <section data-markdown>
+                    ## Constructors and Privacy
+`__init__` is invoked at beginning
+
+Names with initial `__` are private
+```python
+class Dog:
+  def __init__(self, name):
+    self.__name = name
+    
+  def getName(self):
+    return self.__name
+```
+                    </section>
+                    <section data-markdown>
+                    ## Inheritance
+```python
 ```
                     </section>
                 </section>
